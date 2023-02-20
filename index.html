@@ -70,7 +70,7 @@
       <!--Values-->
       <section class="section values">
         <div class="container">
-          <h2 class="hidden-ttl">Values</h2>
+          <h2 class="visually-hidden">Values</h2>
           <ul class="values-list list">
             <li>
               <div class="values-icon">
@@ -399,7 +399,7 @@
           </p>
         </div>
         <div class="net-container">
-          <p>Social media</p>
+          <p class="txt-ttl-ftr">Social media</p>
           <ul class="ftr-net-list net-list list">
             <li class="ftr-net-item net-item">
               <a href="" class="ftr-net-link net-link">
@@ -431,11 +431,31 @@
             </li>
           </ul>
         </div>
+        <div class="container-subscribe">
+          <p class="txt-ttl-ftr">Subscribe</p>
+          <div class="wrapper-ftr-input">
+            <label for="subscribe-input" class="subscribe-label"
+              ><span class="txt-ftr-lbl">E-mail</span></label
+            >
+            <input
+              type="email"
+              name="email-subscribe"
+              id="subscribe-input"
+              class="ftr-input"
+            />
+          </div>
+          <div class="wrapper-ftr-btn">
+            <button type="submit" class="btn btn-ftr">Subscribe</button>
+            <svg class="icon-subscribe" width="24" height="24">
+              <use href="./images/icons.svg#icon-subscribe"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- MODAL WINDOW -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-svg" width="8" height="8">
@@ -446,28 +466,45 @@
         <form class="modal-form">
           <label class="modal-label"
             ><span class="txt-mdl-lbl-first-last txt-mdl-lbl-first">Name</span
-            ><input
-              type="text"
-              name="name"
-              class="modal-input"
-              required
-              autofocus
-              minlength="2"
-              pattern="^[a-zA-Z]+$" /></label
+            ><span class="wrapper-icon-input">
+              <input
+                type="text"
+                name="name"
+                class="modal-input"
+                required
+                autofocus
+                minlength="2"
+                pattern="^[a-zA-Z]+$"
+              />
+              <svg class="icon-input" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg> </span></label
           ><label class="modal-label"
             ><span class="txt-mdl-lbl">Phone</span
-            ><input
-              type="tel"
-              name="phone"
-              class="modal-input"
-              required
-              pattern="[0-9]{10}"
-              title="10 digits" /></label
+            ><span class="wrapper-icon-input"
+              ><input
+                type="tel"
+                name="phone"
+                class="modal-input"
+                required
+                pattern="[0-9]{10}"
+                title="10 digits"
+              /><svg class="icon-input" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg> </span></label
           ><label class="modal-label"
             ><span class="txt-mdl-lbl">Email</span
-            ><input type="email" name="email" class="modal-input" required
-          /></label>
-          <label class="modal-label">
+            ><span class="wrapper-icon-input"
+              ><input
+                type="email"
+                name="email"
+                class="modal-input"
+                required
+              /><svg class="icon-input" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg> </span
+          ></label>
+          <label class="modal-label mdl-lbl-cmmnt">
             <span class="txt-mdl-lbl">Comment</span>
             <textarea
               name="comment"
@@ -480,16 +517,16 @@
             id="accept"
             type="checkbox"
             name="accept"
-            class="modal-input"
+            class="modal-input-accept visually-hidden"
             required
           />
-          <label for="accent" class="modal-label"
+          <label for="accept" class="modal-label-accept"
             ><span class="txt-mdl-lbl-first-last txt-mdl-lbl-last"
               >I accept the terms and conditions of the
               <a href="">Privacy Policy</a></span
             ></label
           >
-          <button type="submit" class="btn">Send</button>
+          <button type="submit" class="btn btn-submit">Send</button>
         </form>
       </div>
     </div>
