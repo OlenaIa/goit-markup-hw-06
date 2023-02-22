@@ -433,23 +433,26 @@
         </div>
         <div class="container-subscribe">
           <p class="txt-ttl-ftr">Subscribe</p>
-          <div class="wrapper-ftr-input">
-            <label for="subscribe-input" class="subscribe-label"
-              ><span class="txt-ftr-lbl">E-mail</span></label
-            >
-            <input
-              type="email"
-              name="email-subscribe"
-              id="subscribe-input"
-              class="ftr-input"
-            />
-          </div>
-          <div class="wrapper-ftr-btn">
-            <button type="submit" class="btn btn-ftr">Subscribe</button>
-            <svg class="icon-subscribe" width="24" height="24">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>
-          </div>
+          <form class="subscribe-form">
+            <div class="wrapper-ftr-input">
+              <input
+                type="email"
+                name="email-subscribe"
+                id="subscribe-input"
+                class="ftr-input"
+                placeholder=" "
+              />
+              <label for="subscribe-input" class="subscribe-label"
+                ><span class="txt-ftr-lbl">E-mail</span></label
+              >
+            </div>
+            <div class="wrapper-ftr-btn">
+              <button type="submit" class="btn btn-ftr">Subscribe</button>
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -520,8 +523,13 @@
             class="modal-input-accept visually-hidden"
             required
           />
-          <label for="accept" class="modal-label-accept"
-            ><span class="txt-mdl-lbl-first-last txt-mdl-lbl-last"
+          <label for="accept" class="modal-label-accept">
+            <span class="icon-click-wrap">
+              <svg class="icon-click" width="10" height="8">
+                <use href="./images/icons.svg#icon-click"></use>
+              </svg>
+            </span>
+            <span class="txt-mdl-lbl-first-last txt-mdl-lbl-last"
               >I accept the terms and conditions of the
               <a href="">Privacy Policy</a></span
             ></label
