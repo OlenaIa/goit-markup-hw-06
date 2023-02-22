@@ -755,13 +755,13 @@ background-color: var(--activ-hover-color);
     outline: 1px solid var(--accent-color);
 }
 
-/* .modal-label-accept {
+ .modal-label-accept {
     display: flex;
     gap: 8px;
     align-items: center;
     margin-bottom: 24px;
 }
-
+/*
  .modal-label-accept::before {
     content: '';
     display: block;
