@@ -59,7 +59,7 @@
       <!--Cards-->
       <section class="cards">
         <div class="container">
-          <h1 class="hidden-ttl">Cards</h1>
+          <h1 class="visually-hidden">Cards</h1>
           <ul class="filter-cards list">
             <li class="filter-item">
               <button type="button" class="filter-btn">All</button>
@@ -77,7 +77,7 @@
               <button type="button" class="filter-btn">Marketing</button>
             </li>
           </ul>
-          <h2 class="hidden-ttl">Projects</h2>
+          <h2 class="visually-hidden">Projects</h2>
           <ul class="cards-list list">
             <li class="card-item">
               <a href="" class="card-link"
@@ -286,7 +286,7 @@
           </p>
         </div>
         <div class="net-container">
-          <p>Social media</p>
+          <p class="txt-ttl-ftr">Social media</p>
           <ul class="ftr-net-list net-list list">
             <li class="ftr-net-item net-item">
               <a href="" class="ftr-net-link net-link">
@@ -317,6 +317,29 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="container-subscribe">
+          <p class="txt-ttl-ftr">Subscribe</p>
+          <form class="subscribe-form">
+            <div class="wrapper-ftr-input">
+              <input
+                type="email"
+                name="email-subscribe"
+                id="subscribe-input"
+                class="ftr-input"
+                placeholder=" "
+              />
+              <label for="subscribe-input" class="subscribe-label"
+                ><span class="txt-ftr-lbl">E-mail</span></label
+              >
+            </div>
+            <div class="wrapper-ftr-btn">
+              <button type="submit" class="btn btn-ftr">Subscribe</button>
+              <svg class="icon-subscribe" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
